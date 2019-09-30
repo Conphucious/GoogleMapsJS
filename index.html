@@ -1,0 +1,37 @@
+<!-- JQUERY, GEOCODER, MAPS -->
+
+
+<!DOCTYPE html>
+<html>
+    <title>CSC399 - Independent Study F19 | Assignment 1</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <head>
+        <link rel="stylesheet" type="text/css" href="mapstyle.css">
+    </head>
+    <body>
+
+
+        <h3>Jimmy's Geographic Analyizer</h3>
+        <!--The div element for the map -->
+        <div id="map"></div>
+
+
+        <h4>Information on Location</h4>
+        <div id="results">-</div>
+
+
+
+
+        <script src="./script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!--Load the API from the specified URL
+             * The async attribute allows the browser to render the page while the API loads
+             * The key parameter will contain your own API key (which is not needed for this tutorial)
+             * The callback parameter executes the initMap() function
+        -->
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxFPoD9u8bRmc90AyeZFM7GI0HMv0M-rw&callback=initMap">
+        </script>
+    </body>
+</html>
